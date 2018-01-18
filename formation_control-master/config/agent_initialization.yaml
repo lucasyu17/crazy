@@ -1,0 +1,13 @@
+sample_time: 0.1
+diag_elements_gamma: [100, 100, 5, 10, 5]
+diag_elements_lambda: [0, 0, 0, 0, 0]
+diag_elements_b: [100, 100]
+
+velocity_virtual_threshold: 4.0
+speed_min: 0.0
+speed_max: 4.0
+steer_min: -0.25
+steer_max: 0.25
+k_p_speed: 0.5
+k_p_steer: 2.0
+vehicle_length: 0.4

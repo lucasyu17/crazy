@@ -1,0 +1,9 @@
+geometry_msgs/Vector3 Rec_posEst
+geometry_msgs/Vector3 Rec_velEst
+geometry_msgs/Vector3 Rec_attEst
+geometry_msgs/Vector3 Rec_posSp
+geometry_msgs/Vector3 Rec_velSp
+geometry_msgs/Vector3 Rec_accSp
+float32 Rec_yaw_sp
+float32 Rec_roll_sp
+float32 Rec_pitch_sp
