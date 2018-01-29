@@ -24,7 +24,7 @@ void rotation2quaternion(const Matrix3f* R, Vector4f* Q);
 
 void euler2quaternion(const Vector3f* Euler, Vector4f* Q);
 
-void vec3f_norm(const Vector3f* a, float anwser);
+void vec3f_norm(const Vector3f* a, float* anwser);
 
 //void quaternion_derivative(const Vector4f* Q, Vector4f* derQ, const Vector3f* w);
 
@@ -47,6 +47,7 @@ void vec3f_integration(Vector3f* Integrated, Vector3f* Origin, float dt);
 
 void vec3f_derivative(Vector3f* Deriv, Vector3f* Origin, Vector3f* l_Origin, float dt);
 
+void vec3f_angle(Vector3f* a, Vector3f* b, float* angleInRad);
 //void add_A2B(const Vector3f* a, Vector3f*b);
 
 float degToRad(float deg);
@@ -56,4 +57,11 @@ float radToDeg(float deg);
 void writeData_bin(const char* fname, Vector3f* vec);
 
 void writeData_binf(const char* fname, float number);
+
+bool IsUAVForm(Vector3f* a, Vector3f*b);
+
+Vector3f CreateVectorFromTwoPts(Vector3f* a, Vector3f* b);
+
+void number_times_vec3f(float* a, Vector3f* v);
+
 #endif
